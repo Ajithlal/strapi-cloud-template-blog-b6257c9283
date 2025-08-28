@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_layout_paragraphs",
+  "info": {
+    "displayName": "Paragraph"
+  },
+  "options": {},
+  "attributes": {
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "media",
+        "quote",
+        "text",
+        "seo",
+        "slider"
+      ]
+    },
+    "Media": {
+      "type": "component",
+      "component": "shared.media",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}
