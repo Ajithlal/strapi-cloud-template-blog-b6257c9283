@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_layout_one_columns",
+  "info": {
+    "displayName": "OneColumn"
+  },
+  "options": {},
+  "attributes": {
+    "Components": {
+      "type": "component",
+      "component": "layout.paragraph",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

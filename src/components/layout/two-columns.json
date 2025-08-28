@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_layout_two_columns",
+  "info": {
+    "displayName": "TwoColumns"
+  },
+  "options": {},
+  "attributes": {
+    "ColumnOneComponents": {
+      "type": "component",
+      "component": "layout.paragraph",
+      "repeatable": true
+    },
+    "ColumnTwoComponents": {
+      "type": "component",
+      "component": "layout.paragraph",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}
