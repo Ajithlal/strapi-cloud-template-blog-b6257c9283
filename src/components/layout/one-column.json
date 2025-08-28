@@ -4,6 +4,12 @@
     "displayName": "OneColumn"
   },
   "options": {},
-  "attributes": {},
+  "attributes": {
+    "Components": {
+      "type": "component",
+      "component": "layout.paragraph",
+      "repeatable": true
+    }
+  },
   "config": {}
 }

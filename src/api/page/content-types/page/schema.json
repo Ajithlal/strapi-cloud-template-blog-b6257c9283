@@ -16,6 +16,13 @@
     },
     "URL": {
       "type": "string"
+    },
+    "Content": {
+      "type": "dynamiczone",
+      "components": [
+        "layout.two-columns",
+        "layout.one-column"
+      ]
     }
   }
 }

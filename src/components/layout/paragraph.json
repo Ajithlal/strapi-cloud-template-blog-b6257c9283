@@ -17,7 +17,62 @@
     },
     "Media": {
       "type": "component",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "Type"
+            },
+            "media"
+          ]
+        }
+      },
       "component": "shared.media",
+      "repeatable": false
+    },
+    "Slider": {
+      "type": "component",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "Type"
+            },
+            "slider"
+          ]
+        }
+      },
+      "component": "shared.slider",
+      "repeatable": false
+    },
+    "Quote": {
+      "type": "component",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "Type"
+            },
+            "quote"
+          ]
+        }
+      },
+      "component": "shared.quote",
+      "repeatable": false
+    },
+    "Test": {
+      "type": "component",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "Type"
+            },
+            "text"
+          ]
+        }
+      },
+      "component": "shared.rich-text",
       "repeatable": false
     }
   },

@@ -5,7 +5,9 @@ export interface LayoutOneColumn extends Struct.ComponentSchema {
   info: {
     displayName: 'OneColumn';
   };
-  attributes: {};
+  attributes: {
+    Components: Schema.Attribute.Component<'layout.paragraph', true>;
+  };
 }
 
 export interface LayoutParagraph extends Struct.ComponentSchema {
@@ -15,6 +17,9 @@ export interface LayoutParagraph extends Struct.ComponentSchema {
   };
   attributes: {
     Media: Schema.Attribute.Component<'shared.media', false>;
+    Quote: Schema.Attribute.Component<'shared.quote', false>;
+    Slider: Schema.Attribute.Component<'shared.slider', false>;
+    Test: Schema.Attribute.Component<'shared.rich-text', false>;
     Type: Schema.Attribute.Enumeration<
       ['media', 'quote', 'text', 'seo', 'slider']
     >;
@@ -26,7 +31,10 @@ export interface LayoutTwoColumns extends Struct.ComponentSchema {
   info: {
     displayName: 'TwoColumns';
   };
-  attributes: {};
+  attributes: {
+    ColumnOneComponents: Schema.Attribute.Component<'layout.paragraph', true>;
+    ColumnTwoComponents: Schema.Attribute.Component<'layout.paragraph', false>;
+  };
 }
 
 export interface SharedMedia extends Struct.ComponentSchema {
